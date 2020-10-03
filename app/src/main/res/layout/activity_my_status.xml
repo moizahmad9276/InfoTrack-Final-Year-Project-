@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyStatusActivity"
+    android:background="@drawable/sli">
+
+    <ScrollView
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:id="@+id/textfacstatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHOOSE YOUR STATUS"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Your status will be visible to all the students"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <RelativeLayout
+            android:id="@+id/rellay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+            <RadioButton
+                android:id="@+id/radBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Available"
+                android:textColor="@color/colorBlack" />
+
+                <RadioButton
+                    android:id="@+id/radBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Not Available"
+                    android:textColor="@color/colorBlack" />
+
+                <RadioButton
+                    android:id="@+id/radBtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Busy"
+                    android:textColor="@color/colorBlack" />
+
+                <RadioButton
+                    android:id="@+id/radBtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="In a meeting"
+                    android:textColor="@color/colorBlack" />
+
+                <RadioButton
+                    android:id="@+id/radBtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Will be back soon!"
+                    android:textColor="@color/colorBlack" />
+
+                <RadioButton
+                    android:id="@+id/radBtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="At lunch"
+                    android:textColor="@color/colorBlack" />
+
+                <RadioButton
+                    android:id="@+id/radBtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Or Write your own?"
+                    android:textColor="@color/colorBlack" />
+
+
+            </RadioGroup>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et1"
+                android:layout_below="@+id/radioGroup1"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:textSize="22sp"
+                android:inputType="text"
+                android:textStyle="italic"
+                android:enabled="false"
+                android:fontFamily="@font/nunito_semibold"
+                android:hint="okay, write your own here..."
+                />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et1"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="20sp"
+                android:text="SAVE"
+                android:textColor="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="15dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:text="Please wait..."
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tvrandom"
+        android:fontFamily="@font/nunito_semibold"/>
+
+</RelativeLayout>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".GreenTabs.GreenHappeningNowFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="6dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EVENT DETAILS"
+                android:textColor="@color/colorBlack"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:text="Name:"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:text="Location:"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:text="location"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:text="Date:"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:text="Time:"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:text="time"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:text="Type:"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:text="type"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="wrap_content"
+                    android:text="Organized By:"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/nunito_bold"/>
+
+                <TextView
+                    android:id="@+id/organize"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.2"
+                    android:layout_height="wrap_content"
+                    android:text="dept"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="22sp"
+                    android:fontFamily="@font/nunito_semibold"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="EVENT HEAD"
+                android:textColor="@color/colorBlack"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_bold"/>
+
+
+            <TextView
+                android:id="@+id/head"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="head"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="EVENT HOST"
+                android:textColor="@color/colorBlack"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_bold"/>
+
+
+            <TextView
+                android:id="@+id/host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="host"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="(LIVE) EVENT PICTURES"
+                android:textColor="@color/colorBlack"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <android.support.v4.view.ViewPager
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/vpager">
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="EVENT GUESTS"
+                android:textColor="@color/colorBlack"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <TextView
+                android:id="@+id/g1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="g1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/g2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="g2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/g3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="g3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/g4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="g4"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/g5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="g5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="EVENT JURY"
+                android:textColor="@color/colorBlack"
+                android:textSize="26sp"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nunito_bold"/>
+
+
+            <TextView
+                android:id="@+id/jury"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="jury"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

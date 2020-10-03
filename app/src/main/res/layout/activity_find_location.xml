@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindLocationActivity"
+    android:background="@drawable/sli">
+
+    <LinearLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNIVERSITY MAP"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <TextView
+            android:id="@+id/findlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Find A Location"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@id/findlocation"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ll1">
+            <TextView
+                android:id="@+id/floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Select your floor:"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <Spinner
+                android:id="@+id/sfloor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@id/floor"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="20sp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/ll1"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ll2">
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="22sp"
+            android:text="From" />
+
+            <EditText
+                android:clickable="true"
+                android:inputType="text"
+                android:focusable="false"
+                android:maxLines="2"
+                android:id="@+id/efrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="22sp"
+                android:hint="Choose starting point"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/layout_from"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"/>
+
+</LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/ll2"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ll3">
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="22sp"
+                android:text="To" />
+
+            <EditText
+                android:clickable="true"
+                android:inputType="text"
+                android:maxLines="2"
+                android:focusable="false"
+                android:id="@+id/eto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="22sp"
+                android:hint="Choose ending point"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/layout_from"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/ll3"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ll4">
+
+            <Button
+                android:id="@+id/btnfind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="20sp"
+                android:text="FIND"
+                android:textColor="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:id="@+id/progressbar"/>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_below="@id/progressbar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wait..."
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tvrandom"
+        android:fontFamily="@font/nunito_semibold"/>
+
+</RelativeLayout>

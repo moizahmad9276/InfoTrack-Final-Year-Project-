@@ -1,0 +1,67 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/textall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/sli">
+
+        <TextView
+            android:id="@+id/txtacc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OPTIONS"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <ListView
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp"
+            android:fontFamily="@font/nunito_bold"
+            android:layout_below="@+id/txtacc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvaccountsettings">
+
+        </ListView>
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:id="@+id/progressbar"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressbar"
+            android:text="Please wait..."
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/tvrandom"
+            android:fontFamily="@font/nunito_semibold"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</merge>

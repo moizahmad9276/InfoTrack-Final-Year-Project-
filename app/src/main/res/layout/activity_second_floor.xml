@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFloorActivity"
+    android:background="@drawable/sli">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        android:gravity="left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/fs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STARTING POINT"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <TextView
+            android:id="@+id/det"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/fs"
+            android:gravity="center"
+            android:text="Second Floor Areas"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:padding="16dp"
+            android:layout_below="@id/det"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/floor_recyclerview">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

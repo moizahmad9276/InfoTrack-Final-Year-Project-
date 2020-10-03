@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsActivity"
+    android:background="@drawable/sli">
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTACT US"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:fontFamily="@font/nunito_bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:text="NEED HELP? WRITE TO US!"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/nunito_semibold"/>
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Your Name"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:hint="Your Name here"
+            android:layout_below="@+id/txtname"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Email Address"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="Your Email Address here"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/txtemail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <TextView
+            android:id="@+id/txttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Message Title"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="Enter Title here"
+            android:layout_below="@+id/txttitle"
+            android:layout_marginRight="20dp"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+
+        <TextView
+            android:id="@+id/txtbody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Your Message/Equiry"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <EditText
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="Enter detailed message here"
+            android:layout_below="@+id/txttitle"
+            android:inputType="textMultiLine|textLongMessage"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="20sp"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:text="Please wait..."
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tvrandom"
+        android:fontFamily="@font/nunito_semibold"/>
+</RelativeLayout>

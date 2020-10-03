@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakeATourActivity"
+    android:background="@drawable/sli">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="6dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TAKE A TOUR"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp"
+                android:fontFamily="@font/nunito_bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Here is a small video for you!"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <Button
+                android:id="@+id/play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/nunito_semibold"
+                android:textSize="20sp"
+                android:text="PLAY VIDEO"
+                android:textColor="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:id="@+id/progressbar"/>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_below="@id/progressbar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wait..."
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tvrandom"
+        android:fontFamily="@font/nunito_semibold"/>
+</RelativeLayout>

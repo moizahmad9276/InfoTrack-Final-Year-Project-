@@ -1,0 +1,248 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grad"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle2"
+                android:padding="3dp"
+                 />
+
+            <TextView
+                android:id="@+id/change_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Change Photo"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/change_photo"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_fullname"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fullname"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions|textPersonName"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Full Name"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/linearLayout2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_designation"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/designation"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions|textShortMessage"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Designation"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/privateinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private Information"
+                android:layout_below="@id/linearLayout4"
+                android:layout_marginTop="25dp"
+                android:textSize="25sp"
+                android:layout_alignParentLeft="true"
+                />
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/privateinfo"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_email"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions|textEmailAddress"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Email"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/linear1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_phno"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phno"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions|number"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Phone Number"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/linear2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_address"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions|textPostalAddress"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Address"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:id="@+id/gender"
+                android:layout_below="@id/linear3"
+                android:paddingTop="10dp"
+                android:textColor="@color/headings"
+                android:textSize="13sp"
+                />
+
+            <RadioGroup
+                android:layout_below="@id/gender"
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/radBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Not Specified"
+                    android:checked="true"
+                    android:textColor="@color/textColor" />
+
+                <RadioButton
+                    android:id="@+id/radBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@id/radBtn1"
+                    android:fontFamily="sans-serif"
+                    android:text="Male"
+                    android:textColor="@color/textColor"/>
+
+                <RadioButton
+                    android:id="@+id/radBtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/radBtn1"
+                    android:fontFamily="sans-serif"
+                    android:text="Female"
+                    android:textColor="@color/textColor"
+
+                    />
+            </RadioGroup>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</merge>

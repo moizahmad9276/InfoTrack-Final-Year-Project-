@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OurTeamActivity"
+    android:background="@drawable/sli">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="6dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="MEET OUR TEAM"
+                android:textColor="@color/colorBlack"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center"
+                android:text="Team InfoTrack"
+                android:textColor="@color/colorBlack"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:id="@+id/mansoor"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:src="@drawable/mansoor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Dr. Mansoor Ebrahim"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Advisor"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_semibold"
+                />
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lin1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="30dp"
+                    >
+
+                    <ImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/daniyal"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:src="@drawable/daniyal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Daniyal Nawaz"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="5dp"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/nunito_semibold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Co-Advisor"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito_semibold"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/lin1"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/zubi"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:src="@drawable/zubi"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Zohaib Rehman Khan"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="5dp"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/nunito_semibold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Developer"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito_semibold"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/lin2"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="30dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/memi"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:src="@drawable/memi"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Memoona Anees"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="5dp"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/nunito_semibold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Developer"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:layout_marginBottom="20dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/lin2"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/moiz"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:gravity="center"
+                        android:src="@drawable/moiz"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Moiz Ahmed"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginTop="5dp"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/nunito_semibold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Developer &amp; Designer"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:layout_marginBottom="20dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity"
+    android:background="@drawable/sli">
+
+    <ScrollView
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:id="@+id/textsignup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:fontFamily="@font/nunito_bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Signup to your account"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:fontFamily="@font/nunito_semibold"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/txtregid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Registration ID"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <EditText
+            android:id="@+id/reg_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Registration ID here"
+            android:layout_below="@+id/txtregid"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/txtfullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Full Name"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <EditText
+            android:id="@+id/f_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Name here"
+            android:layout_below="@id/txtfullname"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txtpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Password"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <EditText
+                android:id="@+id/p_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Password here"
+                android:layout_below="@id/txtpassword"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txtconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Confirm Password"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <EditText
+                android:id="@+id/c_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Confirm Password here"
+                android:layout_below="@id/txtconfirm"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txtemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Email Address"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <EditText
+                android:id="@+id/e_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Email Address here"
+                android:layout_below="@id/txtemail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtdesig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Designation"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_semibold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/relativeLayout5">
+
+            <RadioButton
+                android:id="@+id/radBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="50dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="I'm Faculty"
+                android:checked="true"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack" />
+
+            <RadioButton
+                android:id="@+id/radBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/radBtn1"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="I'm Student"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+
+                />
+        </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/nunito_semibold"
+        android:textSize="20sp"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"/>
+
+    <Button
+        android:id="@+id/btn_alreadymember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:background="@color/transparent"
+        android:text="Already a member? Login here!"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/nunito_semibold"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"/>
+
+
+</LinearLayout>
+
+
+
+</ScrollView>
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:text="Please wait..."
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tvrandom"
+        android:fontFamily="@font/nunito_semibold"/>
+</RelativeLayout>

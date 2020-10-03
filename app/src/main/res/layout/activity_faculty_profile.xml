@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyProfileActivity"
+    android:background="@drawable/sli">
+
+    <ScrollView
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:id="@+id/textfacpro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="6dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:clickable="true"
+                android:focusable="true"
+                android:textSize="30sp"
+                android:fontFamily="@font/nunito_bold"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/profilemenubar"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/vertical"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:id="@+id/imgUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle_border">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_centerInParent="true"
+                    android:id="@+id/profilepic"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/use"
+                    android:padding="3dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/etname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgUser"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="Your Name"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="26sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/txtfullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Full Name"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/fn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfullname"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/txtemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Email Address"
+                android:layout_below="@+id/fn"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/em"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtemail"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/txtregid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Registration ID"
+                android:layout_below="@+id/em"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/rid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtregid"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/txtphno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Contact Number"
+                android:layout_below="@+id/rid"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/pn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtphno"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/txtdesign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Designation"
+                android:layout_below="@+id/pn"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/dsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtdesign"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/txtaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Address"
+                android:layout_below="@+id/dsg"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_semibold"/>
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtaddress"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginBottom="15dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:text="Please wait..."
+        android:textSize="20sp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/tvrandom"
+        android:fontFamily="@font/nunito_semibold"/>
+
+
+
+</RelativeLayout>
